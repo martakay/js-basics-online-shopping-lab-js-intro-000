@@ -26,7 +26,7 @@ function getItemDetails( itemInfo ) {
 function viewCart() {
   var cartItems = getCart();
   console.log("h e l l o my name is M A R T A ---------> ", cartItems)
-  cartItems.length > 0 ? listCartItems() : return "Your shopping cart is empty."
+  cartItems.length > 0 ? listCartItems() : "Your shopping cart is empty."
 }
 
 function total() {
