@@ -35,10 +35,10 @@ function viewCart() {
 }
 
 function listCartItems() {
-  var cartMessage = 'In your cart, you have '
+  var cartMessage = 'In your cart, you have'
 
   if ( getCart().length >=  1 ) {
-    var oneItem = `In your cart, you have ${ getCart()[ 0 ].itemName } at ${ getCart()[ 0 ].itemPrice }.`
+    cartMessage += `${ getCart()[ 0 ].itemName } at ${ getCart()[ 0 ].itemPrice }.`
   }
 }
 
