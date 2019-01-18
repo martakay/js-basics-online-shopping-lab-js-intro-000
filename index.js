@@ -28,31 +28,18 @@ function viewCart() {
 }
 
 function listCartItems() {
-  // var cartMessage = 'In your cart, you have '
-  //
-  // if ( getCart().length >=  1 ) {
-  //   cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
-  // }
-  // else if ( getCart().length >= 2 ) {
-  //   for ( var i = 1; i < getCart().length; i++ ) {
-  //     var firstItem = cartMessage += `${getCart()[1].itemName} at $${getCart()[1].itemPrice},`
-  //     var secondItem = cartMessage +=  `and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
-  //     // getCart()[i]
-  //   }
-  // }
-  var cartDescription = 'In your cart, you have '
-    if ( getCart().length >= 1 ) {
-      cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
-    }
-    if ( getCart().length >= 2 ) {
-      var middleCartItemsDescription = ''
-      for (var i=1; i<getCart().length -1; i++) {
-        middleCartItemsDescription += `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
-      }
-      cartDescription += `${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
-    }
+  var cartMessage = 'In your cart, you have '
 
-    // return `${cartDescription}.`
+  if ( getCart().length >=  1 ) {
+    cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
+  }
+  else if ( getCart().length >= 2 ) {
+    for ( var i = 1; i < getCart().length; i++ ) {
+      var firstItem = cartMessage += `${getCart()[1].itemName} at $${getCart()[1].itemPrice},`
+      var secondItem = cartMessage +=  `and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
+      // getCart()[i]
+    }
+  }
 }
 
 function total() {
