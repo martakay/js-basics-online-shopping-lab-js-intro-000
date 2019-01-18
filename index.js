@@ -32,7 +32,11 @@ function listCartItems() {
 
   if ( getCart().length >=  1 ) {
     cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
-
+  }
+  else if ( getCart().length >= 2 ) {
+    for ( var i = 0; i < getCart().length; i++ ) {
+      // getCart()[i]
+    }
   }
 }
 
