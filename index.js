@@ -24,6 +24,8 @@ function getItemDetails( itemInfo ) {
 }
 
 function viewCart() {
+  return getCart().length < 1 ? "Your shopping cart is empty." : listCartItems( cartItems );
+
   // if ( getCart().length < 1 ) {
   //   return "Your shopping cart is empty.";
   // }
