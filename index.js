@@ -32,7 +32,7 @@ function listCartItems( cartItems ) {
   var cartMessage = "In your cart, you have";
 
   if ( cartItems.length >= 1 ) {
-    cartMessage += `You have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
+    var oneItem = cartMessage += `You have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
   }
   // else if ( cartItems.length >= 2 ) {
 
