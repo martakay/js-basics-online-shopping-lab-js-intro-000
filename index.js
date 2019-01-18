@@ -34,6 +34,12 @@ function viewCart() {
   // }
 }
 
+function listCartItems() {
+  if (getCart().length >=  1) {
+    var oneItem = `In your cart, you have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
+  }
+}
+
 function total() {
   // write your code here
 }
