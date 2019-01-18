@@ -29,6 +29,10 @@ function viewCart() {
   return cartItems.length < 1 ? "Your shopping cart is empty." : listCartItems();
 }
 
+function listCartItems() {
+
+}
+
 function total() {
   // write your code here
 }
