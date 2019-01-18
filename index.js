@@ -23,6 +23,8 @@ function getItemDetails( itemInfo ) {
   }
 }
 
+console.log("????????=============");
+
 function viewCart() {
   var cartItems = getCart();
   console.log("h e l l o my name is M A R T A ---------> ", cartItems)
