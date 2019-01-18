@@ -44,7 +44,7 @@ function listCartItems() {
     cartMessage = `${middleCartMessage}, and ${getCart()[i].itemName} at $${getCart()[ i ].itemPrice}.`
   }
 
-  return `${cartMessage}`;
+  return `${cartMessage}.`;
 }
 
 function total() {
