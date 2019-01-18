@@ -39,7 +39,8 @@ function listCartItems() {
     for ( var i = 1; i < getCart().length - 1 ; i++ ) {
       middleCartMessage += `, ${ getCart()[ i ].itemName } at $${ getCart()[ i ].itemPrice }`
     }
-    cartMessage += `${ middleCartMessage}, and ${ getCart()[ i ].itemName } at $${ getCart()[ i ].itemPrice }`
+    cartMessage += `${ middleCartMessage}, and ${ getCart()[ i ].itemName } `
+    cartMessage += `at $${ getCart()[ i ].itemPrice }`
   }
 
   return `${ cartMessage }.`;
