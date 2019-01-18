@@ -35,7 +35,7 @@ function viewCart() {
 }
 
 function listCartItems() {
-  if (getCart().length >=  1) {
+  if ( getCart().length >=  1 ) {
     var oneItem = `In your cart, you have ${ getCart()[ 0 ].itemName } at ${ getCart()[ 0 ].itemPrice }.`
   }
 }
