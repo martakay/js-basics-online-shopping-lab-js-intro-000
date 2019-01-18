@@ -24,19 +24,12 @@ function getItemDetails( itemInfo ) {
 }
 
 function viewCart() {
-  var cartItems = getCart();
-  return cartItems.length < 1 ? "Your shopping cart is empty." : listCartItems( cartItems );
-}
-
-function listCartItems( cartItems ) {
-  // var cartMessage = "In your cart, you have";
-
-  if ( cartItems.length >= 1 ) {
-    var oneItem = `In your cart, you have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
+  if ( getCart().length < 1 ) {
+    return "Your shopping cart is empty.";
   }
-  // else if ( cartItems.length >= 2 ) {
-
-  // }
+  else if ( getCart().length >= 1 ) {
+    var stringOne = `${ getCart()[ 0 ].itemName } at $${ getCart()[ 0 ].itemPrice }.`
+  }
 }
 
 function total() {
