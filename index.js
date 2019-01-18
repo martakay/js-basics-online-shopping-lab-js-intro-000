@@ -43,7 +43,7 @@ function listCartItems() {
     }
   }
 
-  return cartMessage;
+  return `${cartMessage}`;
 }
 
 function total() {
