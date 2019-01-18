@@ -19,7 +19,7 @@ function addToCart(item) {
 function getItemDetails(itemInfo) {
   return {
     itemName: itemInfo,
-    itemPrice: Math.floor(Math.random() * 100) + 1
+    itemPrice: Math.floor( Math.random() * 100 ) + 1
   }
 }
 
