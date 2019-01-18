@@ -34,7 +34,9 @@ function listCartItems() {
     cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
   }
   else if ( getCart().length >= 2 ) {
-    for ( var i = 0; i < getCart().length; i++ ) {
+    for ( var i = 1; i < getCart().length; i++ ) {
+      var firstItem = cartMessage += `${getCart()[1].itemName} at $${getCart()[1].itemPrice},`
+      var secondItem = cartMessage +=  `and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
       // getCart()[i]
     }
   }
