@@ -32,6 +32,8 @@ function listCartItems() {
 
   if ( getCart().length >=  1 ) {
     cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
+    cartMessage += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
+
   }
 }
 
