@@ -52,7 +52,7 @@ function listCartItems() {
       cartDescription += `${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
     }
 
-    return `${cartDescription}.`
+    // return `${cartDescription}.`
 }
 
 function total() {
