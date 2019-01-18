@@ -35,12 +35,12 @@ function listCartItems() {
   }
   if ( getCart().length >= 2 ) {
     for ( var i = 1; i < getCart().length - 1; i++ ) {
-      cartMessage += ` , ${getCart()[1].itemName} at $${getCart()[1].itemPrice},`
-      cartMessage +=  `and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
+      cartMessage += ` , ${getCart()[i].itemName} at $${getCart()[i].itemPrice},`
+      // cartMessage +=  `and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
     }
-    if ( getCart().length >= 3 ) {
-      cartMessage += `${getCart()[3].itemName} at $${getCart()[3].itemPrice}.`
-    }
+    // if ( getCart().length >= 3 ) {
+      // cartMessage += `${getCart()[3].itemName} at $${getCart()[3].itemPrice}.`
+    // }
   }
 
   return `${cartMessage}`;
