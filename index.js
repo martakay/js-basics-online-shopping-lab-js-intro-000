@@ -30,9 +30,9 @@ function viewCart() {
 
 function listCartItems( cartItems ) {
   // var cartMessage = "In your cart, you have";
+  console.log("----------->>>>", cartItems)
 
   if ( cartItems.length >= 1 ) {
-    console.log("----------->>>>", cartItems)
     var oneItem = `In your cart, you have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
   }
   // else if ( cartItems.length >= 2 ) {
