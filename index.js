@@ -26,6 +26,7 @@ function getItemDetails( itemInfo ) {
 console.log("????????=============");
 var cartItems = getCart();
 console.log("????????=============", cartItems);
+console.lo(".....", getCart()d)
 
 function viewCart() {
   var cartItems = getCart();
