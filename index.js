@@ -29,7 +29,7 @@ function viewCart() {
 }
 
 function listCartItems( cartItems ) {
-  var cartMessage = "In your cart, you have";
+  // var cartMessage = "In your cart, you have";
 
   if ( cartItems.length >= 1 ) {
     var oneItem = cartMessage += `You have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
