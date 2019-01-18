@@ -9,14 +9,14 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
-  var itemDetails = getItemDetails(item)
-  getCart().push(itemDetails);
+function addToCart( item ) {
+  var itemDetails = getItemDetails( item )
+  getCart().push( itemDetails );
 
-  return `${itemDetails.itemName} has been added to your cart.`
+  return `${ itemDetails.itemName } has been added to your cart.`
 }
 
-function getItemDetails(itemInfo) {
+function getItemDetails( itemInfo ) {
   return {
     itemName: itemInfo,
     itemPrice: Math.floor( Math.random() * 100 ) + 1
