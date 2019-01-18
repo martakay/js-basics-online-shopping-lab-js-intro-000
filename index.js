@@ -37,8 +37,8 @@ function listCartItems() {
     var middleCartMessage = '';
 
     for ( var i = 1; i < getCart().length - 1; i++ ) {
+      middleCartMessage += ` , ${getCart()[ i ].itemName} at $${getCart()[ i ].itemPrice}`
       // cartMessage += ` , ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
-  
       // cartMessage +=  `and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
     }
     // if ( getCart().length >= 3 ) {
