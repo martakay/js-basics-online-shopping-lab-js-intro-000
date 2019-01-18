@@ -31,7 +31,7 @@ function listCartItems() {
   var cartMessage = 'In your cart, you have '
 
   if ( getCart().length >=  1 ) {
-    cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}.`
+    cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}`
   }
   if ( getCart().length >= 2 ) {
     var middleCartMessage = '';
