@@ -34,7 +34,9 @@ function listCartItems( cartItems ) {
   if ( cartItems.length >= 1 ) {
     cartMessage += `You have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
   }
+  // else if ( cartItems.length >= 2 ) {
 
+  // }
 }
 
 function total() {
