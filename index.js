@@ -36,7 +36,7 @@ function listCartItems() {
   if ( getCart().length >= 2 ) {
     var middleCartMessage = '';
 
-    for ( var i = 1; i < getCart().length -1 ; i++ ) {
+    for ( var i = 1; i < getCart().length - 1 ; i++ ) {
       middleCartMessage += ` , ${getCart()[ i ].itemName} at $${getCart()[ i ].itemPrice}`
     }
     cartMessage += `${middleCartMessage}, and ${getCart()[i].itemName} at $${getCart()[ i ].itemPrice}.`
