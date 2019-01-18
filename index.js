@@ -41,9 +41,7 @@ function listCartItems() {
       // cartMessage += ` , ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
       // cartMessage +=  `and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
     }
-    // if ( getCart().length >= 3 ) {
-      // cartMessage += `${getCart()[3].itemName} at $${getCart()[3].itemPrice}.`
-    // }
+    cartMessage = `${middleCartMessage}, and ${getCart()[i].itemName} at $${getCart()[ i ].itemPrice}.`
   }
 
   return `${cartMessage}`;
