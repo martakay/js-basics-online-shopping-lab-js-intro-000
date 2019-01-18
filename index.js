@@ -42,6 +42,8 @@ function listCartItems() {
       cartMessage += `${getCart()[3].itemName} at $${getCart()[3].itemPrice}.`
     }
   }
+
+  return cartMessage;
 }
 
 function total() {
