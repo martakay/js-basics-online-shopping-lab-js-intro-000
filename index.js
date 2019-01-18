@@ -25,13 +25,6 @@ function getItemDetails( itemInfo ) {
 
 function viewCart() {
   return getCart().length < 1 ? "Your shopping cart is empty." : listCartItems();
-
-  // if ( getCart().length < 1 ) {
-  //   return "Your shopping cart is empty.";
-  // }
-  // else if ( getCart().length >= 1 ) {
-  //   var stringOne = `${ getCart()[ 0 ].itemName } at $${ getCart()[ 0 ].itemPrice }.`
-  // }
 }
 
 function listCartItems() {
