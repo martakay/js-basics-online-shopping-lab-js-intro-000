@@ -34,6 +34,7 @@ function listCartItems() {
     cartMessage += `${getCart()[ 0 ].itemName} at $${getCart()[ 0 ].itemPrice}.`
   }
   if ( getCart().length >= 2 ) {
+    var middleCartMessage = '';
     for ( var i = 1; i < getCart().length - 1; i++ ) {
       cartMessage += ` , ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
       // cartMessage +=  `and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
