@@ -25,10 +25,15 @@ function getItemDetails( itemInfo ) {
 
 function viewCart() {
   var cartItems = getCart();
-  return cartItems.length < 1 ? "Your shopping cart is empty." : listCartItems();
+  return cartItems.length < 1 ? "Your shopping cart is empty." : listCartItems( cartItems );
 }
 
-function listCartItems() {
+function listCartItems( cartItems ) {
+  var cartMessage = "In your cart, you have";
+
+  if ( cartItems.length >= 1 ) {
+    cartMessage += `You have ${ cartItems.itemName } at ${ cartItems.itemPrice }.`
+  }
 
 }
 
